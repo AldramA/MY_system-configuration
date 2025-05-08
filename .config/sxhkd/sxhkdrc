@@ -1,0 +1,37 @@
+# Hard restart sxhkd
+super + Escape
+    pkill sxhkd && sxhkd &
+
+super + o
+     ~/.local/bin/Obsidian-1.8.9.AppImage
+
+super + shift + p
+    mpv "$(xclip -selection clipboard -o)"
+
+super + w
+    chromium
+
+# Volume Up - Super + F10
+super + F10
+    pamixer -i 5
+
+# Volume Down - Super + F9
+super + F9
+    pamixer -d 5
+
+# Mute Toggle - Super + F8
+super + F8
+    pamixer -t
+
+# Power menu
+super + shift + BackSpace
+    ~/.local/bin/shadown-launcher.sh
+
+super + shift + p 
+    audacious
+
+super + shift +Print
+    ~/.local/bin/record_screen.sh
+
+shift + Print
+    f=~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S-%N').png && scrot -s "$f" && xclip -selection clipboard -t image/png -i "$f" 

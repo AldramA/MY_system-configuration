@@ -1,0 +1,22 @@
+Aldurma/
+secret.txt
+*.log
+.DS_Store
+Downloads/
+.cache/
+# استثناء nvim plugins اللي جواها git repos
+.config/nvim/
+.local/share/nvim/lazy/
+.zsh/zsh-autosuggestions/
+powerlevel10k/
+
+# مشاريعك في src
+src/dwm/
+src/st/
+src/dmenu/
+
+.config/chromium/
+.local/
+.p10k.zsh
+
+.config/chromium/
